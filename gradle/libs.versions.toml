@@ -13,6 +13,7 @@ okhttp3 = "5.2.1"
 coil = "3.3.0"
 navigationCompose = "2.9.5"
 serialization = "1.9.0"
+room = "2.8.2"
 
 junit5 = "6.0.0"
 mockwebserver = "5.2.1"
@@ -54,6 +55,9 @@ retrofit2 = { group = "com.squareup.retrofit2", name = "retrofit", version.ref =
 gson-converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofit2" }
 coil-compose = { group = "io.coil-kt.coil3", name = "coil-compose", version.ref = "coil" }
 coil-network = { group = "io.coil-kt.coil3", name = "coil-network-okhttp", version.ref = "coil" }
+room = { group = "androidx.room", name = "room-runtime", version.ref = "room"}
+room-test = { group = "androidx.room", name = "room-testing", version.ref = "room"}
+
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }

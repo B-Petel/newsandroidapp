@@ -89,6 +89,7 @@ dependencies {
     implementation(libs.coil.compose)
     implementation(libs.coil.network)
     implementation(libs.kotlinx.serialization.json)
+    implementation(libs.room)
 
     testImplementation(libs.junit5)
     testImplementation(libs.junit5.api)
@@ -97,6 +98,7 @@ dependencies {
     testImplementation(libs.okhttp3.mockwebserver)
     testImplementation(libs.kotlinx.coroutines.test)
     testImplementation(libs.robolectric)
+    testImplementation(libs.room.test)
 
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
