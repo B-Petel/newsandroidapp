@@ -1,4 +1,4 @@
-package com.bpetel.newsandroidapp.data.model
+package com.bpetel.newsandroidapp.data.remote.model
 
 import com.google.gson.annotations.SerializedName
 

@@ -1,6 +1,7 @@
-package com.bpetel.newsandroidapp.data.remote
+package com.bpetel.newsandroidapp.data.repository
 
-import com.bpetel.newsandroidapp.data.model.toArticle
+import com.bpetel.newsandroidapp.data.remote.LumenFeedApi
+import com.bpetel.newsandroidapp.data.remote.model.toDomain
 import com.bpetel.newsandroidapp.domain.Article
 import com.bpetel.newsandroidapp.domain.LumenFeedRepository
 import kotlinx.coroutines.flow.Flow
@@ -13,7 +14,7 @@ class LumenFeedRepositoryImpl(
         val articleList = mutableListOf<Article>()
 
         api.getArticles().body()?.data?.forEach { articleDto ->
-            articleList.add(articleDto.toArticle())
+            articleList.add(articleDto.toDomain())
         }
 
         return flow {

@@ -1,4 +1,4 @@
-package com.bpetel.newsandroidapp.data.model
+package com.bpetel.newsandroidapp.data.remote.model
 
 import com.bpetel.newsandroidapp.domain.Article
 import com.google.gson.annotations.SerializedName
@@ -24,7 +24,7 @@ data class ArticleDto(
     @SerializedName("topic_id") val topicId: String
 )
 
-fun ArticleDto.toArticle(): Article {
+fun ArticleDto.toDomain(): Article {
     return Article(
         id = id,
         publisherId = publisherId,

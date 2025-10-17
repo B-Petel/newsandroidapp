@@ -1,6 +1,6 @@
 package com.bpetel.newsandroidapp.data.remote
 
-import com.bpetel.newsandroidapp.data.model.ArticleListDto
+import com.bpetel.newsandroidapp.data.remote.model.ArticleListDto
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import kotlinx.coroutines.test.runTest
